@@ -1,0 +1,23 @@
+{
+  "name": "clinic-app",
+  "version": "1.0.0",
+  "description": "Minor project for college - Clinic management project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anand987/clinic-app.git"
+  },
+  "author": "Anand Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anand987/clinic-app/issues"
+  },
+  "homepage": "https://github.com/Anand987/clinic-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
