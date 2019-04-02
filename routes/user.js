@@ -3,16 +3,15 @@ const path = require('path');
 const express = require('express');
 
 const router = express.Router();
-const rootDir = require('../util/path');
 
 router.get('/', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'home.html'));
+  res.render('home',{path:'/',pageTitle:'DOC OC'});
 });
 router.get('/about', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'about.html'));
+  res.render('about',{path:'/about',pageTitle:'About Clinic'});
 });
 router.get('/login', (req, res, next) => {
-  res.sendFile(path.join(rootDir, 'views', 'login.html'));
+  res.render('login',{path:'/login',pageTitle:'Login'});
 });
 
 module.exports = router;

@@ -4,7 +4,9 @@
   "description": "Minor project for college - Clinic management project",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -16,8 +18,13 @@
     "url": "https://github.com/Anand987/clinic-app/issues"
   },
   "homepage": "https://github.com/Anand987/clinic-app#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.6.1",
     "express": "^4.16.4"
   }
 }
