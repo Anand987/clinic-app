@@ -6,6 +6,9 @@ const router = express.Router();
 const rootDir = require('../util/path');
 
 // /admin/add-product => GET
+router.post('/patientinfo', (req, res, next) => {
+  res.render('patientinfo',{pageTitle:'Patient Information',path:''});
+});
 router.get('/patientinfo', (req, res, next) => {
   res.render('patientinfo',{pageTitle:'Patient Information',path:''});
 });

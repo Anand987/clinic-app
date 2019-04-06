@@ -1,0 +1,13 @@
+body{
+    color: grey;
+}
+.jumbotron{
+    background: url("/images/medical-clinic.jpg") no-repeat; 
+    background-color: rgb(51, 51, 51);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: white;
+}
