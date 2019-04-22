@@ -1,24 +1,29 @@
 <%- include('includes/head.ejs') %>
 <link rel="stylesheet" href="/css/home.css">
+<style>
+</style>
 </head>
 
 <body>
   <%- include('includes/navigation.ejs') %>
   <main>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Expert Care</h1>
-        <h1 class="display-4">Close to Home</h1>
-        <p class="lead">Access to expert physicians and surgeouns, advanced technologies and top quality facilities
-          right here.</p>
-        <hr class="my-4">
-        <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
-        <a class="btn btn-primary btn-md" href="/about" role="button">About us</a>
+    <div class="parallax" style="color: aliceblue; background-image: url('/images/medical-clinic2.jpg');">
+      <div class="container py-5">
+        <div style="margin: 120px auto;">
+            <h1 class="display-4">Expert Care</h1>
+            <h1 class="display-4">Close to Home</h1>
+            <p class="lead">Access to expert physicians and surgeouns, advanced technologies and top quality facilities
+              right here.</p>
+            <hr class="my-4">
+            <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+            <a class="btn btn-primary btn-md" href="/about" role="button">About us</a>
+        </div>
       </div>
     </div>
+
     <div class="container px-lg-5">
       <div class="row mx-lg-n5">
-        <div class="col-5 py-3 px-lg-5">
+        <div class="col-sm-5 py-3 px-lg-5">
           <img src="http://www.chapelhillfamilydoctors.com.au/images/doctor-img2.png" alt="doctor image">
         </div>
         <div class="col py-3 px-lg-5">
@@ -33,49 +38,55 @@
         </div>
       </div>
     </div>
-    <div class="container text-center mt-3">
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <h3 class="head__ing">Our Services</h3>
-          <p style="font-size: 14px; color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ullam
-            totam qui libero ratione ad ipsum culpa eaque maxime, repudiandae sed deleniti, minus et aperiam.</p>
-        </div>
-      </div>
-      <div class="card-deck my-5">
-        <div class="card">
-          <img src="https://cdn3.iconfinder.com/data/icons/business-ultimate-1/64/Black-13-256.png"
-            class="card-img-top mx-auto" style="width: 150px; height: 150px;" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Psychiatry</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            </div>
-              <div class="card-footer">
-                <button class="btn btn-primary">Lear More</button>
-              </div>
-        </div>
-        <div class="card">
-          <img src="https://cdn3.iconfinder.com/data/icons/medical-specialties-1-2/256/Orthopedics-256.png"
-            class="card-img-top mx-auto" style="width: 150px; height: 150px;" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Orthopedics</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    <div class="parallax"
+      style="background-image: url('/images/Service.png');">
+      <div class="container text-center mt-3">
+        <div class="row py-4">
+          <div class="col-md-6 offset-md-3">
+            <h3 class="head__ing" style="color:aliceblue;">Our Services</h3>
+            <p style="font-size: 14px; color: aliceblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              ullam
+              totam qui libero ratione ad ipsum culpa eaque maxime, repudiandae sed deleniti, minus et aperiam.</p>
           </div>
-              <div class="card-footer">
-                <button class="btn btn-primary">Lear More</button>
-              </div>
         </div>
-        <div class="card">
-          <img src="https://cdn4.iconfinder.com/data/icons/medical-specialties/128/Medical_Specialties-07-128.png"
-            class="card-img-top mx-auto" style="width: 150px; height: 150px;" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Ostelogy</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
+        <div class="pb-5">
+          <div class="card-deck my-5">
+            <div class="card">
+              <img src="https://cdn3.iconfinder.com/data/icons/business-ultimate-1/64/Black-13-256.png"
+                class="card-img-top mx-auto" style="width: 150px; height: 150px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Psychiatry</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+              </div>
               <div class="card-footer">
                 <button class="btn btn-primary">Lear More</button>
               </div>
+            </div>
+            <div class="card">
+              <img src="https://cdn3.iconfinder.com/data/icons/medical-specialties-1-2/256/Orthopedics-256.png"
+                class="card-img-top mx-auto" style="width: 150px; height: 150px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Orthopedics</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary">Lear More</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://cdn4.iconfinder.com/data/icons/medical-specialties/128/Medical_Specialties-07-128.png"
+                class="card-img-top mx-auto" style="width: 150px; height: 150px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ostelogy</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary">Lear More</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -3,6 +3,8 @@ const path = require("path");
 const express = require("express");
 const bodyParser = require("body-parser");
 
+const db = require('./util/database');
+
 const app = express();
 //Setting Template Engine -> EJS, with files to set location view folder
 app.set('view engine','ejs');

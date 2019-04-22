@@ -3,11 +3,121 @@
 </head>
 
 <body>
-<%- include('includes/navigation.ejs') %>
-    <main>
-        <h1>Patient Information</h1>
-        <form class="patient-form" action="/admin/details" method="post">
-            
-        </form>
+    <%- include('includes/navigation.ejs') %>
+    <main class="my-5">
+        <div class="container">
+            <form action="/admin/details" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">First Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Last Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control" required>
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <h2>Medical History</h2>
+                        <div class="ml-5">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check1" value="Diabaties">
+                                <label for="check1" class="form-check-label">Diabaties</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check2" value="Infection">
+                                <label for="check2" class="form-check-label">Infection</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check3" value="Hyper Tension">
+                                <label for="check3" class="form-check-label">Hyper Tension</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check4" value="Insomnia">
+                                <label for="check4" class="form-check-label">Insomnia</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check5" value="Insomnia">
+                                <label for="check5" class="form-check-label">Other</label>
+                                <textarea class="form-control" id="check5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <h2>Family History</h2>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="mother" value="Mother">
+                            <label class="form-check-label" for="mother">Mother</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="father" value="Father">
+                            <label class="form-check-label" for="father">Father</label>
+                        </div>
+                        <div class="ml-5">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check6" value="Diabaties">
+                                <label for="check6" class="form-check-label">Diabaties</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check7" value="Infection">
+                                <label for="check7" class="form-check-label">Infection</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check8" value="Hyper Tension">
+                                <label for="check8" class="form-check-label">Hyper Tension</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check9" value="Insomnia">
+                                <label for="check9" class="form-check-label">Insomnia</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check10" value="Insomnia">
+                                <label for="check10" class="form-check-label">Other</label>
+                                <textarea class="form-control" id="check5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="Duration">Duration</label>
+                </div> -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="cheif-complain">Cheif Complain</label>
+                        <textarea id="cheif-complain" cols="30" rows="10" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="associated-complain">Associated Complain</label>
+                        <textarea id="associated-complain" cols="30" rows="10" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
     </main>
-<%- include('includes/end.ejs') %>
+    <%- include('includes/end.ejs') %>

@@ -1,14 +1,3 @@
-.jumbotron
-{
-    background-image:url("/images/medical-clinic.jpg");
-    background-color: rgba(0, 0, 0,0.5);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    color: aliceblue;
-}
-
 .card-title{
     color: #118DB4;
 }
